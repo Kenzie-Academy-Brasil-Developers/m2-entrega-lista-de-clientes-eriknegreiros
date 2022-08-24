@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/styleBase.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
     <title>Entrega Lista de Clientes - Delete</title>
 </head>
+
 <body>
     <header>
         <ul>
@@ -19,13 +25,15 @@
     </header>
 
     <form>
-        
-        <label for="cliente">Escolha o cliente que quer Deletar</label>
-        
-        <select name="cliente" ></select>
 
-        <button>Deletar</button>
+        <label for="cliente">Escolha o cliente que quer Deletar</label>
+
+        <select class="selecionar" name="cliente"></select>
+
+        <button class="deletando">Deletar</button>
     </form>
 
+    <script type="module" src="../js/scripts/delete.js"></script>
 </body>
+
 </html>

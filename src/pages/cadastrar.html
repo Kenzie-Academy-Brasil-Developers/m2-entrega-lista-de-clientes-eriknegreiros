@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/styleBase.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
     <title>Entrega Lista de Clientes</title>
 </head>
+
 <body>
     <header>
         <ul>
@@ -24,33 +30,45 @@
 
         <h3>Dados pessoais</h3>
 
-        <input type="text" name="nome" placeholder="digite seu nome"/>
+        <input class="createName" type="text" name="nome" placeholder="digite seu nome" />
 
-        <input type="text" name="email" placeholder="digite sua email"/>
+        <input class="createEmail" type="text" name="email" placeholder="digite sua email" />
 
-        <input type="number" name="idade" placeholder="digite sua idade"/>
+        <input class="createIdade" type="number" name="idade" placeholder="digite sua idade" />
 
-        <input type="text" name="cpf" placeholder="digite seu cpf"/>
+        <input class="createCpf" type="text" name="cpf" placeholder="digite seu cpf" />
 
-        <input type="text" name="sexo" placeholder="digite seu sexo"/>
+        <input class="createSexo" type="text" name="sexo" placeholder="digite seu sexo" />
 
 
         <h3>Endereço</h3>
 
-        <input type="number" name="cep" placeholder="digite seu cep"/>
-        
-        <input type="text" name="rua" placeholder="digite sua rua"/>
+        <input class="createCep" type="number" name="cep" placeholder="digite seu cep" />
 
-        <input type="number" name="numero" placeholder="digite o numero"/>
+        <input class="createRua" type="text" name="rua" placeholder="digite sua rua" />
 
-        <input type="text" name="bairro" placeholder="digite seu bairro"/>
+        <input class="createNumero" type="number" name="numero" placeholder="digite o numero" />
 
-        <input type="text" name="cidade" placeholder="digite sua cidade"/>
+        <input class="createBairro" type="text" name="bairro" placeholder="digite seu bairro" />
 
-        <input type="text" name="estado" placeholder="digite seu estado"/>
+        <input class="createCidade" type="text" name="cidade" placeholder="digite sua cidade" />
+
+        <input class="createEstado" type="text" name="estado" placeholder="digite seu estado" />
 
 
-        <button>Cadastrar</button>
+        <button class="createUserBtn">Cadastrar</button>
     </form>
+
+    <div class="container-sucess none">
+        <div class="circle-border"></div>
+        <div class="circle">
+            <div class="success"></div>
+          </div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/scripts/create.js"></script>
+
 </body>
+
 </html>

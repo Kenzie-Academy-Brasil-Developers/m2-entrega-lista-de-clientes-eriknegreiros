@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/styleBase.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
     <title>Entrega Lista de Clientes</title>
 </head>
+
 <body>
     <header>
         <ul>
@@ -19,49 +25,51 @@
     </header>
 
     <form>
-        
-        <label for="cliente">Escolha o cliente que quer editar</label>
-        
-        <select name="cliente"></select>
 
-        <button>Buscar Cliente</button>
+        <label for="cliente">Escolha o cliente que quer editar</label>
+
+        <select class="selecionar" name="cliente"></select>
+
+        <button class="atualizarBtn">Buscar Cliente</button>
 
     </form>
-    
+
     <form>
         <h2>Editar cliente</h2>
 
         <h3>Dados pessoais</h3>
 
-        <input type="text" name="nome" placeholder="digite seu nome"/>
+        <input class="editName" type="text" name="nome" placeholder="digite seu nome" />
 
-        <input type="text" name="email" placeholder="digite sua email"/>
+        <input class="editEmail" type="text" name="email" placeholder="digite sua email" />
 
-        <input type="number" name="idade" placeholder="digite sua idade"/>
+        <input class="editIdade" type="number" name="idade" placeholder="digite sua idade" />
 
-        <input type="text" name="cpf" placeholder="digite seu cpf"/>
+        <input class="editCpf" type="text" name="cpf" placeholder="digite seu cpf" />
 
-        <input type="text" name="sexo" placeholder="digite seu sexo"/>
+        <input class="editSexo" type="text" name="sexo" placeholder="digite seu sexo" />
 
 
         <h3>Endereço</h3>
 
-        <input type="number" name="cep" placeholder="digite seu cep"/>
-        
-        <input type="text" name="rua" placeholder="digite sua rua"/>
+        <input class="editCep" type="number" name="cep" placeholder="digite seu cep" />
 
-        <input type="number" name="numero" placeholder="digite o numero"/>
+        <input class="editRua" type="text" name="rua" placeholder="digite sua rua" />
 
-        <input type="text" name="bairro" placeholder="digite seu bairro"/>
+        <input class="editNumero" type="number" name="numero" placeholder="digite o numero" />
 
-        <input type="text" name="cidade" placeholder="digite sua cidade"/>
+        <input class="editBairro" type="text" name="bairro" placeholder="digite seu bairro" />
 
-        <input type="text" name="estado" placeholder="digite seu estado"/>
+        <input class="editCidade" type="text" name="cidade" placeholder="digite sua cidade" />
+
+        <input class="editEstado" type="text" name="estado" placeholder="digite seu estado" />
 
 
-        <button>Atualizar Dados</button>
+        <button class="editBtn">Atualizar Dados</button>
     </form>
+   
 
-
+    <script type="module" src="../js/scripts/edit.js"></script>
 </body>
+
 </html>
